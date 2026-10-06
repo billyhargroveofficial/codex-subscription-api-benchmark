@@ -1,0 +1,28 @@
+{
+  "name": "codex-subscription-api-benchmark",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node pi-api-meter.ts --self-test && node tests/public-results.mjs",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test",
+    "benchmark": "node pi-api-meter.ts",
+    "audit:publication": "node scripts/audit-publication.mjs"
+  },
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "1.0.2"
+  },
+  "overrides": {
+    "@earendil-works/pi-ai": "1.0.2"
+  },
+  "license": "MIT",
+  "description": "Direct Codex subscription SSE benchmark with native reasoning-token accounting and offline tests",
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "24.10.1"
+  }
+}

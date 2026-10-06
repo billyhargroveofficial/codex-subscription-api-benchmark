@@ -1,0 +1,138 @@
+{
+  "description": "One validated paired observation; not a population estimate. Hosts and accounts anonymized.",
+  "date": "2026-10-06",
+  "endpoint": "https://chatgpt.com/backend-api/codex/responses",
+  "transport": "HTTPS SSE",
+  "same_request_body": true,
+  "different_accounts": true,
+  "oauth_plan_labels": [
+    "pro",
+    "pro"
+  ],
+  "runs": {
+    "host_a": {
+      "model_requested": "gpt-6.1-sol",
+      "model_echo": "gpt-6.1-sol",
+      "effort_requested": "xhigh",
+      "effort_echo": "xhigh",
+      "service_tier_requested": "default",
+      "service_tier_echo": "default",
+      "native_nonreasoning_output_tokens": 1845,
+      "ttft_visible_s": 355.310586583,
+      "first_to_last_visible_s": 32.304468167,
+      "native_nonreasoning_over_visible_span_tps": 57.112842423597726,
+      "message_item_receipt_s": 32.793784125,
+      "native_nonreasoning_over_message_receipt_tps": 56.26066186712144,
+      "full_response_s": 387.629882042,
+      "end_to_end_all_output_tokens_per_s": 33.14243972194078,
+      "raw_delta_count": 1839,
+      "first_delta_utf16_chars": 1,
+      "final_utf16_chars": 7538,
+      "max_interdelta_gap_s": 1.070413334,
+      "same_timestamp_delta_fraction": 0.42274211099020675,
+      "validations": {
+        "one_terminal_response": true,
+        "one_assistant_message": true,
+        "no_tools_or_compaction": true,
+        "IDs_match": true,
+        "raw_deltas_equal_final": true,
+        "SDK_text_equals_API_text": true,
+        "native_counts_present": true,
+        "sequence_monotonic": true
+      },
+      "terminal_message_text_present_and_compared": false,
+      "versions": {
+        "pi_coding_agent": "1.0.2",
+        "pi_ai": "1.0.2",
+        "node": "v26.8.2",
+        "provider_source_sha256": "53b4abdad5f2af1e5e5c12605d96bf6651d4a4b847351d87898ebb67d04236f7",
+        "usage_processor_sha256": "8744ad2ce9ce2512993360600760f5bcdbeb520d0a641c655b2a0b7cbe9db10a"
+      },
+      "native_usage": {
+        "input_tokens": 101209,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 12847,
+        "output_tokens_details": {
+          "reasoning_tokens": 11002
+        },
+        "total_tokens": 114056
+      },
+      "input": {
+        "prompt_sha256": "235c4a14253edaaf5db670e90603c38cb102fb2340aa77b9d27322d9ab6b6906",
+        "system_sha256": "dbbe927015833eb8d6f1a36a1d143c88d01cc686cbac4b0d956ef42af4d8bc44",
+        "request_json_sha256": "a31093b623bcf22c93867f73c5e500a58d79dfd13aa9055ce866d6fc2ef80a7a",
+        "config_sha256": "e35ee43393ddcd9a21a440065299b4417d77bbb7af3abaf0b1c07bf1603d1da3",
+        "prompt_utf8_bytes": 461137,
+        "request_json_bytes": 463989,
+        "request_input_items": 1,
+        "request_tool_schemas": 0,
+        "previous_response_id_present": false
+      }
+    },
+    "host_b": {
+      "model_requested": "gpt-6.1-sol",
+      "model_echo": "gpt-6.1-sol",
+      "effort_requested": "xhigh",
+      "effort_echo": "xhigh",
+      "service_tier_requested": "default",
+      "service_tier_echo": "default",
+      "native_nonreasoning_output_tokens": 1795,
+      "ttft_visible_s": 288.744292274,
+      "first_to_last_visible_s": 35.638525265,
+      "native_nonreasoning_over_visible_span_tps": 50.36684280993074,
+      "message_item_receipt_s": 35.64074285,
+      "native_nonreasoning_over_message_receipt_tps": 50.36370895956227,
+      "full_response_s": 324.397355074,
+      "end_to_end_all_output_tokens_per_s": 34.54097212797548,
+      "raw_delta_count": 1789,
+      "first_delta_utf16_chars": 2,
+      "final_utf16_chars": 7337,
+      "max_interdelta_gap_s": 0.960554151,
+      "same_timestamp_delta_fraction": 0.4519015659955257,
+      "validations": {
+        "one_terminal_response": true,
+        "one_assistant_message": true,
+        "no_tools_or_compaction": true,
+        "IDs_match": true,
+        "raw_deltas_equal_final": true,
+        "SDK_text_equals_API_text": true,
+        "native_counts_present": true,
+        "sequence_monotonic": true
+      },
+      "terminal_message_text_present_and_compared": false,
+      "versions": {
+        "pi_coding_agent": "1.0.3",
+        "pi_ai": "1.0.3",
+        "node": "v26.10.0",
+        "provider_source_sha256": "53b4abdad5f2af1e5e5c12605d96bf6651d4a4b847351d87898ebb67d04236f7",
+        "usage_processor_sha256": "8744ad2ce9ce2512993360600760f5bcdbeb520d0a641c655b2a0b7cbe9db10a"
+      },
+      "native_usage": {
+        "input_tokens": 101209,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 11205,
+        "output_tokens_details": {
+          "reasoning_tokens": 9410
+        },
+        "total_tokens": 112414
+      },
+      "input": {
+        "prompt_sha256": "235c4a14253edaaf5db670e90603c38cb102fb2340aa77b9d27322d9ab6b6906",
+        "system_sha256": "dbbe927015833eb8d6f1a36a1d143c88d01cc686cbac4b0d956ef42af4d8bc44",
+        "request_json_sha256": "a31093b623bcf22c93867f73c5e500a58d79dfd13aa9055ce866d6fc2ef80a7a",
+        "config_sha256": "e35ee43393ddcd9a21a440065299b4417d77bbb7af3abaf0b1c07bf1603d1da3",
+        "prompt_utf8_bytes": 461137,
+        "request_json_bytes": 463989,
+        "request_input_items": 1,
+        "request_tool_schemas": 0,
+        "previous_response_id_present": false
+      }
+    }
+  }
+}

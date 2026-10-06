@@ -1,0 +1,12 @@
+node_modules/
+/runs/
+/api-result/
+*.log
+.env
+.env.*
+**/auth.json
+.codex/
+.pi/
+.DS_Store
+*.pem
+*.key
